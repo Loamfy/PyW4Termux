@@ -1,7 +1,7 @@
 # wheels-for-python-in-termux
-Wheels for python in termux (Android​ App)
+#### Wheels for python in termux (Android​ App)
 
-After installing some packages like ninja, cmake, you need to reinstall those packages with 
+After installing some packages like ninja, cmake, you need to reinstall these packages using
 ```
 pkg reinstall cmake ninja
 ```
