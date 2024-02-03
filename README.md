@@ -7,3 +7,5 @@ pkg reinstall cmake ninja
 ```
 
 If you want me to upload some other wheels, you can say about it in [issues](https://github.com/Almaz-Kabirov/wheels-for-python-in-termux/issues)
+
+Some packages are not updated because I'm busy right now.
