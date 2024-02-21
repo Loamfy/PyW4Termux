@@ -1,5 +1,5 @@
-# wheels-for-python-in-termux
-#### Wheels for python in termux (Android​ App)
+# PythonWheels4Termux
+###### Helps you easily install some hard packages like numpy, pillow and etc
 
 After installing some packages like ninja, cmake, you need to reinstall these packages using
 ```
