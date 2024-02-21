@@ -1,5 +1,5 @@
 # PythonWheels4Termux
-##### Helps you easily install some hard packages like numpy, pillow, etc. ​Some other packages available from termux-repo (like opencv-python, scipy, etc)
+Helps to easily install some hard packages like numpy, pillow, etc. ​Some other packages available from termux-repo (like opencv-python, scipy, etc)
 
 After installing some packages like ninja, cmake, you need to reinstall these packages using
 ```
