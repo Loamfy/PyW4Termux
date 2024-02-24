@@ -31,11 +31,11 @@ if [ -z "$LD_LIBRARY_PATH" ] || [ ! "$LD_LIBRARY_PATH" == *"$PREFIX/lib"* ]; the
 fi
 
 # installing gfortran and lfortran library
-apt-get --assume-yes install libgfortran5 gcc-8 lfortran
+apt-get --assume-yes install libgfortran5 lfortran gcc-8
 
 # enabling gfortran if user wants to
 echo "Enable GFortRan?"
-read -p "Do you want to continue [Y/n] " -n 1 -r CONFIRM
+read -p "Do you want to continue [Y/n] " -r CONFIRM
 echo
 if [[ $CONFIRM = [Yy] ]]; then
   bash termux-setupclang-gfort-8
