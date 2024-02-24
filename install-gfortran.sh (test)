@@ -1,6 +1,7 @@
-# script from setup-pointless-repo.sh (https://github.com/its-pointless/gcc_termux/blob/master/setup-pointless-repo.sh)
-
 #!/data/data/com.termux/files/usr/bin/sh
+
+# script from setup-pointless-repo.sh (https://github.com/its-pointless/gcc_termux/blob/master/setup-pointless-repo.sh)
+#######################################################################################################################
 # Get some needed tools. coreutils for mkdir command, gnugp for the signing key, and apt-transport-https to actually connect to the repo
 apt-get update
 apt-get --assume-yes upgrade
