@@ -37,7 +37,7 @@ apt-get --assume-yes install libgfortran5 lfortran gcc-8
 echo "Enable GFortRan?"
 read -p "Do you want to continue [Y/n] " -r CONFIRM
 echo
-if [[ $CONFIRM = [Yy] ]]; then
+if [[ $CONFIRM =~ [Yy] ]]; then
   bash termux-setupclang-gfort-8
 else
   echo "Abort. You can still enable it using \" bash termux-setupclang-gfort-8 \""
