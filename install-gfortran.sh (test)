@@ -7,6 +7,8 @@ cyan="\e[0;36m"         # Cyan
 white="\e[0;37m"        # White
 nocol="\033[0m"         # Default
 
+PREFIX=${echo $PREFIX}  # fixes ${echo $PREFIX/lib} in echo
+
 # script from setup-pointless-repo.sh (https://github.com/its-pointless/gcc_termux/blob/master/setup-pointless-repo.sh) + green ECHOs & slient by Loamf
 #######################################################################################################################
 # Get some needed tools. coreutils for mkdir command, gnugp for the signing key, and apt-transport-https to actually connect to the repo
@@ -37,8 +39,9 @@ apt-get update < /dev/null > /dev/null
 
 # check and set LD_LIBRARY_PATH if needed
 if [ ! "$LD_LIBRARY_PATH" == "/data/data/com.termux/files/usr/lib" ]; then
-  echo -e "LD_LIBRARY_PATH not set to ${$PREFIX/lib}, trying to set it..."
+  echo -e "${nocol}LD_LIBRARY_PATH ${red}not set to ${nocol}$PREFIX/lib${red}, trying to set it...${nocol}"
   export LD_LIBRARY_PATH=$PREFIX/lib
+  source ~/.bashrc
   echo -e "${nocol}LD_LIBRARY_PATH ${cyan}is set to ${nocol}${LD_LIBRARY_PATH}${nocol}"
 else
   echo -e "${nocol}LD_LIBRARY_PATH ${green} found (from termux lib folder) - ${nocol}(${LD_LIBRARY_PATH})${nocol}"
