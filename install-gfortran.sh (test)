@@ -33,16 +33,15 @@ wget -qO - https://its-pointless.github.io/pointless.gpg | apt-key add -
 fi
 # Update apt
 apt update < /dev/null > /dev/null
-
 #######################################################################################################################
 
 # check and set LD_LIBRARY_PATH if needed
-if [ ! "$LD_LIBRARY_PATH" == *"/data/data/com.termux/files/usr/lib"* ]; then
-  echo -e "${nocol}LD_LIBRARY_PATH ${green}not found, trying to set it...${nocol}"
+if [ ! "$LD_LIBRARY_PATH" == "/data/data/com.termux/files/usr/lib" ]; then
+  echo -e "${nocol}LD_LIBRARY_PATH ${green}not set to ${nocol}${$PREFIX/lib}${green} (old path is "${nocol}$(LD_LIBRARY_PATH)${green}") trying to set it...${nocol}"
   export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
-  echo -e "${nocol}LD_LIBRARY_PATH ${green}is setted to ${nocol}${LD_LIBRARY_PATH}${nocol}"
+  echo -e "${nocol}LD_LIBRARY_PATH ${cyan}is set to ${nocol}${LD_LIBRARY_PATH}${nocol}"
 else
-  echo -e "${nocol}LD_LIBRARY_PATH ${green} found ${nocol}(${LD_LIBRARY_PATH})${nocol}"
+  echo -e "${nocol}LD_LIBRARY_PATH ${green} found (from termux lib folder) - ${nocol}(${LD_LIBRARY_PATH})${nocol}"
 fi
 
 # installing gfortran and lfortran library
