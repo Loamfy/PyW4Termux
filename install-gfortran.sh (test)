@@ -30,4 +30,4 @@ if [ -z "$LD_LIBRARY_PATH" ] || [ ! "$LD_LIBRARY_PATH" == *"$PREFIX/lib"* ]; the
 fi
 
 # installing gfortran
-apt-get -assume-yes install gfortran
+apt-get --assume-yes install gfortran
