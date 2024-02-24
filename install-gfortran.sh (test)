@@ -40,11 +40,13 @@ apt update
 if [ -z "$LD_LIBRARY_PATH" ] || [ ! "$LD_LIBRARY_PATH" == *"$PREFIX/lib"* ]; then
   echo "${nocol}LD_LIBRARY_PATH ${green}not found, trying to set it..."
   export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
-  echo "${nocol}LD_LIBRARY_PATH ${green}is setted to ${green}${$LD_LIBRARY_PATH}"
+  echo "${nocol}LD_LIBRARY_PATH ${green}is setted to ${nocol}${LD_LIBRARY_PATH}"
+else
+  echo "${nocol}LD_LIBRARY_PATH ${green} found (${LD_LIBRARY_PATH})"
 fi
 
 # installing gfortran and lfortran library
-apt-get --assume-yes install libgfortran5 lfortran gcc-8
+apt --assume-yes install libgfortran5 lfortran gcc-8
 
 # enabling gfortran if user wants to
 echo "Enable GFortRan?"
