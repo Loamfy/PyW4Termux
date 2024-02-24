@@ -32,7 +32,7 @@ elif [ -n $(command -v wget) ]; then
 wget -qO - https://its-pointless.github.io/pointless.gpg | apt-key add -
 fi
 # Update apt
-apt update
+apt update < /dev/null > /dev/null
 
 #######################################################################################################################
 
