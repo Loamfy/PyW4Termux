@@ -3,9 +3,9 @@
 # script from setup-pointless-repo.sh (https://github.com/its-pointless/gcc_termux/blob/master/setup-pointless-repo.sh)
 #######################################################################################################################
 # Get some needed tools. coreutils for mkdir command, gnugp for the signing key, and apt-transport-https to actually connect to the repo
-apt-get update
-apt-get --assume-yes upgrade
-apt-get --assume-yes install coreutils gnupg wget
+apt-get update < /dev/null > /dev/null
+apt-get --assume-yes upgrade < /dev/null > /dev/null
+apt-get --assume-yes install coreutils gnupg wget < /dev/null > /dev/null
 # Make the sources.list.d directory
 mkdir -p $PREFIX/etc/apt/sources.list.d
 # Write the needed source file
@@ -40,6 +40,6 @@ echo
 if [[ $CONFIRM = [Yy] ]]; then
   bash termux-setupclang-gfort-8
 else
-  echo "Abort."
+  echo "Abort. You can still enable it using \" bash termux-setupclang-gfort-8 \""
   exit 1
 fi
