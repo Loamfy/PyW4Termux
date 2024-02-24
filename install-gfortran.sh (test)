@@ -39,7 +39,7 @@ echo "Do you want to continue [Y/n]"
 read -n 1 -r CONFIRM
 echo
 if [[ $CONFIRM = [Yy] ]]; then
-  bash termux-setupclang-gfort-5
+  bash termux-setupclang-gfort-8
 else
   echo "Abort."
   exit 1
