@@ -11,15 +11,15 @@ nocol="\033[0m"         # Default
 #######################################################################################################################
 # Get some needed tools. coreutils for mkdir command, gnugp for the signing key, and apt-transport-https to actually connect to the repo
 
-echo "${green}Updating installed packages..."
-apt-get update < /dev/null > /dev/null
+echo -e "${green}Updating installed packages..."
+apt update < /dev/null > /dev/null
 apt --assume-yes upgrade < /dev/null > /dev/null
-echo "${green}Installing some necessary packages for pointless-repo..."
+echo -e "${green}Installing some necessary packages for pointless-repo..."
 apt --assume-yes install coreutils gnupg wget < /dev/null > /dev/null
 # Make the sources.list.d directory
 mkdir -p $PREFIX/etc/apt/sources.list.d
 # Write the needed source file
-echo "${green}Installing pointless-repo..."
+echo -e "${green}Installing pointless-repo..."
 if apt-cache policy | grep -q "termux.*24\|termux.org\|bintray.*24" ; then
 echo "deb https://its-pointless.github.io/files/24 termux extras" > $PREFIX/etc/apt/sources.list.d/pointless.list
 else
@@ -37,12 +37,12 @@ apt update
 #######################################################################################################################
 
 # check and set LD_LIBRARY_PATH if needed
-if [ -z "$LD_LIBRARY_PATH" ] || [ ! "$LD_LIBRARY_PATH" == *"$PREFIX/lib"* ]; then
-  echo "${nocol}LD_LIBRARY_PATH ${green}not found, trying to set it..."
+if [ ! "$LD_LIBRARY_PATH" == *"/data/data/com.termux/files/usr/lib"* ]; then
+  echo -e "${nocol}LD_LIBRARY_PATH ${green}not found, trying to set it..."
   export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
-  echo "${nocol}LD_LIBRARY_PATH ${green}is setted to ${nocol}${LD_LIBRARY_PATH}"
+  echo -e "${nocol}LD_LIBRARY_PATH ${green}is setted to ${nocol}${LD_LIBRARY_PATH}"
 else
-  echo "${nocol}LD_LIBRARY_PATH ${green} found (${LD_LIBRARY_PATH})"
+  echo -e "${nocol}LD_LIBRARY_PATH ${green} found (${LD_LIBRARY_PATH})"
 fi
 
 # installing gfortran and lfortran library
