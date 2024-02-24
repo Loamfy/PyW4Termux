@@ -7,8 +7,6 @@ cyan="\e[0;36m"         # Cyan
 white="\e[0;37m"        # White
 nocol="\033[0m"         # Default
 
-PREFIX=${echo $PREFIX}  # fixes ${echo $PREFIX/lib} in echo
-
 # script from setup-pointless-repo.sh (https://github.com/its-pointless/gcc_termux/blob/master/setup-pointless-repo.sh) + green ECHOs & slient by Loamf
 #######################################################################################################################
 # Get some needed tools. coreutils for mkdir command, gnugp for the signing key, and apt-transport-https to actually connect to the repo
