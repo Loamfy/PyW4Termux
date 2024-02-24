@@ -7,7 +7,7 @@ cyan="\e[0;36m"         # Cyan
 white="\e[0;37m"        # White
 nocol="\033[0m"         # Default
 
-# script from setup-pointless-repo.sh (https://github.com/its-pointless/gcc_termux/blob/master/setup-pointless-repo.sh) + green ECHOs by Loamf
+# script from setup-pointless-repo.sh (https://github.com/its-pointless/gcc_termux/blob/master/setup-pointless-repo.sh) + green ECHOs & slient by Loamf
 #######################################################################################################################
 # Get some needed tools. coreutils for mkdir command, gnugp for the signing key, and apt-transport-https to actually connect to the repo
 
@@ -37,7 +37,7 @@ apt-get update < /dev/null > /dev/null
 
 # check and set LD_LIBRARY_PATH if needed
 if [ ! "$LD_LIBRARY_PATH" == "/data/data/com.termux/files/usr/lib" ]; then
-  echo -e "${nocol}LD_LIBRARY_PATH ${green}not set to ${nocol}${$PREFIX/lib}${green}, trying to set it...${nocol}"
+  echo -e "LD_LIBRARY_PATH not set to ${$PREFIX/lib}, trying to set it..."
   export LD_LIBRARY_PATH=$PREFIX/lib
   echo -e "${nocol}LD_LIBRARY_PATH ${cyan}is set to ${nocol}${LD_LIBRARY_PATH}${nocol}"
 else
