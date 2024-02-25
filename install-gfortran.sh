@@ -59,5 +59,8 @@ else
 fi
 
 # tells the user to restart the termux app
-echo -e "${green}GFortran have been installed, restart termux using ${nocol}\" exit \" to load New LD_LIBRARY_PATH and GFortran ${green}will work${nocol}"
+echo -e "${green}GFortran have been installed, restart termux using 
+echo -e "${nocol}\" exit \"${nocol}"
+echo -e "${cyan}or${nocol}"
+echo -e "${cyan}use ${nocol}\" source ~/.bashrc \"${cyan} to update ${nocol}LD_LIBRARY_PATH${nocol}"
 exit
