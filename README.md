@@ -1,5 +1,5 @@
 # PythonWheels4Termux
-Helps to easily install some hard packages like numpy, pillow, etc. ​Some other packages available from termux-repo (like opencv-python, scipy, etc)
+Helps to easily install some hard packages like numpy, pillow, scipy etc. ​Some other packages available from termux-repo (like opencv-python, etc)
 
 ________________________________________
 
@@ -7,7 +7,14 @@ After installing some packages like ninja, cmake, you need to reinstall these pa
 ```
 pkg reinstall cmake ninja
 ```
+_
+curl-cffi have lib libcurl-impersonate-chrome, that requires some modules, install them using
+```
+pkg install rtmpdump libgsasl libpsl openldap
+```
+
+________________________________________
 
 If you want me to upload some other wheels, you can say about it in [issues](https://github.com/Loamf/PyW4Termux/issues)
 
-Some packages are not updated because I'm busy right now.
+
