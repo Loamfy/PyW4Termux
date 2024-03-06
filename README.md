@@ -7,8 +7,8 @@ After installing some packages like ninja, cmake, you need to reinstall these pa
 ```
 pkg reinstall cmake ninja
 ```
-_
-curl-cffi have lib libcurl-impersonate-chrome, that requires some modules, install them using
+
+curl-cffi have lib libcurl-impersonate-chrome that requires some modules, install them using
 ```
 pkg install rtmpdump libgsasl libpsl openldap
 ```
