@@ -1,0 +1,3 @@
+[submodule "PyW4Termux-Data"]
+	path = PyW4Termux-Data
+	url = https://github.com/Loamf/PyW4Termux-Data.git
