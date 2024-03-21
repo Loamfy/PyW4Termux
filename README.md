@@ -3,7 +3,7 @@ Helps to easily install some hard packages like numpy, pillow, scipy etc. ​Som
 
 ________________________________________
 
-I added lib libcurl-impersonate-chrome to curl-cffi wheel that requires some modules, install them using
+I added lib libcurl-impersonate-chrome to curl-cffi wheel (PyW4Termux-Data repo) that requires some modules, install them using
 ```
 pkg install rtmpdump libgsasl libpsl openldap
 ```
