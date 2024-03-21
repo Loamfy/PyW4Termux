@@ -37,7 +37,6 @@ apt-get update < /dev/null > /dev/null
 
 # check and set LD_LIBRARY_PATH if needed
 if [ ! "$LD_LIBRARY_PATH" == "/data/data/com.termux/files/usr/lib" ]; then
-  echo -e "${nocol}LD_LIBRARY_PATH ${red}not set to ${nocol}$PREFIX/lib${red}, trying to set it...${nocol}"
   echo "export LD_LIBRARY_PATH=$PREFIX/lib" >> ~/.bashrc
   source ~/.bashrc
   echo -e "${nocol}LD_LIBRARY_PATH ${cyan}is set to ${nocol}${LD_LIBRARY_PATH}${nocol}"
@@ -59,7 +58,7 @@ else
 fi
 
 # tells the user to restart the termux app
-echo -e "${green}GFortran have been installed, restart termux using 
+echo -e "${green}GFortran have been installed, restart termux using"
 echo -e "${nocol}\" exit \"${nocol}"
 echo -e "${cyan}or${nocol}"
 echo -e "${cyan}use ${nocol}\" source ~/.bashrc \"${cyan} to update ${nocol}LD_LIBRARY_PATH${nocol}"
