@@ -3,12 +3,7 @@ Helps to easily install some hard packages like numpy, pillow, scipy etc. ​Som
 
 ________________________________________
 
-After installing some packages like ninja, cmake, you need to reinstall these packages using
-```
-pkg reinstall cmake ninja
-```
-
-Curl-Cffi have lib libcurl-impersonate-chrome that requires some modules, install them using
+I added lib libcurl-impersonate-chrome to curl-cffi wheel that requires some modules, install them using
 ```
 pkg install rtmpdump libgsasl libpsl openldap
 ```
