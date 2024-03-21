@@ -57,7 +57,7 @@ else
   echo "Abort. You can still enable it using \" bash termux-setupclang-gfort-8 \""
 fi
 
-# tells the user to restart the termux app
+# tells the user to restart the termux app or type command
 echo -e "${green}GFortran have been installed, restart termux using"
 echo -e "${nocol}\" exit \"${nocol}"
 echo -e "${cyan}or${nocol}"
