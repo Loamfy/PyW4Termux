@@ -1,5 +1,5 @@
 # PythonWheels4Termux
-Helps to use some hard packages or helps build other packages, that weren't compiled for termux. 
+Helps to use some hard-to-compile packages by providing pre-compiled libraries for Termux.​ This​ repo​ can​ help​ with building other modules (packages)
 
 ## Install (optional)
 If you don't want to add ```--extra-index-url``` argument everytime, you can type this command
