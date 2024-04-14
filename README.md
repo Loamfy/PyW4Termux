@@ -2,7 +2,6 @@
 Helps to use some hard packages like numpy, pillow, scipy etc. ​Some other packages available from termux-repo (like opencv-python, etc)
 
 ## Usage
-NOT WORKING RIGHT NOW
 ```
 pip install some_packages --extra-index-url https://loamf.github.io/PyW4Termux/WHLs-index
 ```
