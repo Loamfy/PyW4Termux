@@ -1,9 +1,14 @@
 # PythonWheels4Termux
-Helps to easily install some hard packages like numpy, pillow, scipy etc. ​Some other packages available from termux-repo (like opencv-python, etc)
+Helps to use some hard packages like numpy, pillow, scipy etc. ​Some other packages available from termux-repo (like opencv-python, etc)
 
+## Usage
+
+```
+pip install some_packages --extra-index-url https://loamf.github.io/PyW4Termux/WHLs-index
+```
 ________________________________________
 
-I added lib libcurl-impersonate-chrome to curl-cffi wheel (PyW4Termux-Data repo) that requires some modules, install them using
+Lib libcurl-impersonate-chrome for curl-cffi requires some modules, install them using
 ```
 pkg install rtmpdump libgsasl libpsl openldap
 ```
