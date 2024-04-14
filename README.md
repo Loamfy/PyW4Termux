@@ -1,8 +1,8 @@
 # PythonWheels4Termux
-Helps to use some hard packages like numpy, pillow, scipy etc. ​Some other packages available from termux-repo (like opencv-python, etc)
+Helps to use some hard packages or helps build other packages, that weren't compiled for termux. 
 
 ## Install (optional)
-If you dont want to add --extra-index-url argument everytime, you can use this command
+If you don't want to add ```--extra-index-url``` argument everytime, you can type this command
 ```
 pip config set global.extra-index-url https://Loamf.github.io/PyW4Termux/WHLs-index
 ```
