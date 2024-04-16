@@ -12,8 +12,8 @@ and pip will use PyW4Termux as 2nd package index
 ```
 pip install some_packages --extra-index-url https://Loamf.github.io/PyW4Termux/index
 ```
-
 [Link](https://Loamf.github.io/PyW4Termux/index)
+
 ________________________________________
 
 Lib libcurl-impersonate-chrome for curl-cffi requires some modules, install them using
