@@ -4,13 +4,13 @@ Helps to use some hard-to-build modules by providing compiled python modules for
 ## Install (optional)
 If you don't want to add ```--extra-index-url``` argument everytime, you can type this command
 ```
-pip config set global.extra-index-url https://Loamf.github.io/PyW4Termux/WHLs-index
+pip config set global.extra-index-url https://Loamf.github.io/PyW4Termux/index
 ```
 and pip will use PyW4Termux as 2nd package index
 
 ## Usage
 ```
-pip install some_packages --extra-index-url https://loamf.github.io/PyW4Termux/WHLs-index
+pip install some_packages --extra-index-url https://Loamf.github.io/PyW4Termux/index
 ```
 ________________________________________
 
