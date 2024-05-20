@@ -1,2 +1,0 @@
-May help:
-https://github.com/opencv/opencv-python/issues/814
