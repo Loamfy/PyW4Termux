@@ -23,6 +23,6 @@ pkg install rtmpdump libgsasl libpsl openldap
 
 ________________________________________
 
-If you want me to upload some other wheels, you can say about it in [issues](https://github.com/Loamf/PyW4Termux/issues)
+If you want me to upload some other wheels, you can say about it in [issues](https://github.com/Loamfy/PyW4Termux/issues)
 
 
