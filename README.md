@@ -12,7 +12,7 @@ and pip will use PyW4Termux as 2nd package index
 ```
 pip install some_packages --extra-index-url https://Loamfy.github.io/PyW4Termux/PyIndex
 ```
-[Link to the Index page](https://Loamf.github.io/PyW4Termux/PyIndex/index)
+[Link to the Index page](https://Loamfy.github.io/PyW4Termux/PyIndex/index)
 
 ________________________________________
 
