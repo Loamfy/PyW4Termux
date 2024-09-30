@@ -1,6 +1,9 @@
 # PythonWheels4Termux
 Helps to use some hard-to-build modules by providing compiled python modules for Termux.​ This​ repo​ can​ help​ with building other modules
 
+# Warning
+I'm tired by building packages by myself and I'm stopping this repository
+
 ## Install (optional)
 If you don't want to add ```--extra-index-url``` argument everytime, you can type this command
 ```
