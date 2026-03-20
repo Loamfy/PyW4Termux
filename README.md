@@ -1,8 +1,24 @@
 # PythonWheels4Termux
-Helps to use some hard-to-build modules by providing compiled python modules for Termux.​ This​ repo​ can​ help​ with building other modules
 
-# Warning
-I'm tired by building packages by myself and I'm stopping this repository
+> ⚠️ **DEPRECATION NOTICE: This repository is obsolete and no longer maintained.** ⚠️
+> 
+> As mentioned previously, manually building and fixing packages became unsustainable. 
+> Because of this, I have completely reimagined the approach and created a fully automated, robust successor: **Termux-PyPI** and the **`tpip`** tool.
+
+## 🚀 Please migrate to Termux-PyPI
+If you are looking for pre-compiled Python wheels for Termux (like NumPy, SciPy, PyYAML, etc.) that *actually work* out of the box, please use the new ecosystem. 
+
+* **Termux-PyPI Recipes:** [termux-pypi/recipes](https://github.com/termux-pypi/recipes)
+* **`tpip` Tool:** [termux-pypi/termux-pip](https://github.com/termux-pypi/termux-pip)
+
+---
+
+## 📦 Legacy Documentation (Archived)
+*Warning: The instructions and packages below are outdated and will likely not work with newer Python or Termux versions. Kept for historical purposes only.*
+
+# PythonWheels4Termux
+
+Helps to use some hard-to-build modules by providing compiled python modules for Termux.​ This​ repo​ can​ help​ with building other modules
 
 ## Install (optional)
 If you don't want to add ```--extra-index-url``` argument everytime, you can type this command
